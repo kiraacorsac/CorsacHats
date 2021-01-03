@@ -7,6 +7,7 @@ Client-side BepInEx mod that adds the ability to wear custom hats represented as
 
 ![screenshot](https://i.imgur.com/ap0txjo.png)
 ![screenshot](https://i.imgur.com/OXxk1a7.png)
+
 Short video: https://i.imgur.com/um3i9Yx.mp4
 
 ## Installation
