@@ -9,8 +9,8 @@ Client-side BepInEx mod that adds the ability to wear custom hats represented as
 For PC:
 
 1) Install latest BepInEx (version UnityIL2CPP_x86)
-	1) Download from [here](https://builds.bepis.io/projects/bepinex_be) 
-	2) Extract into AmongUs folder (something like `C:\Program Files (x86)\Steam\steamapps\common\Among Us`)
+	1) Download from [here](https://builds.bepis.io/projects/bepinex_be)
+	2) Extract into AmongUs folder (something like `C:\Program Files (x86)\Steam\steamapps\common\Among Us`) (last tested Artifact: #320)
 2) Download CorsacHats.dll from latest release [here](https://github.com/kiraacorsac/CorsacHats/releases/)
 3) Place CorsacHats.dll in `<AmongUs folder>\BepInEx\plugins` (create the folder if it does not exist)
 
