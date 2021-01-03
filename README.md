@@ -1,5 +1,9 @@
 ﻿# CorsacHats
 
+## Description
+
+Client-side BepInEx mod that adds the ability to wear custom hats represented as simple .png files. Any custom hat will be seen by *you* and *anyone who has the same mod and hat installed*. 
+
 ## Installation
 
 For PC:
