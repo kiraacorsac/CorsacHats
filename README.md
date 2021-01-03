@@ -9,6 +9,7 @@ Any custom hat will be seen by *you* and *anyone who has the same mod and exact 
 People who don't have the mod will see you with a pseudo-random hat. You might also see other people wearing hats you've added into the game - on their side, it looks like they are wearing a their own hat.
 
 ![screenshot](https://i.imgur.com/ap0txjo.png)
+![screenshot](https://i.imgur.com/OXxk1a7.png)
 
 Short video: https://i.imgur.com/um3i9Yx.mp4
 
