@@ -5,9 +5,9 @@
 For PC:
 
 1) Install latest BepInEx (version x86)
-	1) Download from https://github.com/BepInEx/BepInEx/releases 
+	1) Download from [here](https://github.com/BepInEx/BepInEx/releases) 
 	2) Extract into AmongUs folder (something like `C:\Program Files (x86)\Steam\steamapps\common\Among Us`)
-2) Download latest CorsacHats release
+2) Download CorsacHats.dll from latest release [here](https://github.com/kiraacorsac/CorsacHats/releases/)
 3) Place CorsacHats.dll in `<AmongUs folder>\BepInEx\plugins` (create the folder if it does not exist)
 
 Currently not supported on other platforms.
@@ -24,5 +24,5 @@ Currently not supported on other platforms.
 Make sure to include `LogOutput.log` from the `BepInEx` folder.
 
 ### Attributions
-(CrowdedMod)[https://github.com/CrowdedMods/CrowdedMod] for getting me started with modding AmongUs.
-(Oggy)[https://twitter.com/OggyOsbourne] for the embedded Kiraa hat.
+- [CrowdedMod](https://github.com/CrowdedMods/CrowdedMod) for getting me started with modding AmongUs.
+- [Oggy](https://twitter.com/OggyOsbourne) for the embedded Kiraa hat.
