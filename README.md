@@ -42,4 +42,4 @@ Create an issue with steps to replicate the problem. In case of the mod not work
 
 ### Attributions
 - [CrowdedMod](https://github.com/CrowdedMods/CrowdedMod) for getting me started with modding AmongUs.
-- [Oggy](https://twitter.com/OggyOsbourne) for the embedded Kiraa hat.
+- [Oggy](https://twitter.com/OggyOsbourne) for the exempary hats and the embedded Kiraa hat.
