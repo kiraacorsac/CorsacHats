@@ -12,7 +12,6 @@ using UnityEngine;
 using BepInEx;
 using BepInEx.IL2CPP;
 using HatManager = OFCPCFDHIEF;
-using Palette = LOCPGOACAJF;
 
 
 namespace CorsacHats
@@ -20,7 +19,7 @@ namespace CorsacHats
     public class MyHats
     {
         static bool modded = false;
-        [HarmonyPatch(typeof(HatManager), nameof(HatManager.GetUnlockedHats))]
+        [HarmonyPatch(typeof(HatManager), nameof(HatManager.GetHatById))]
         public static class HatManagerHatsPatch
         {
             internal delegate bool d_LoadImage(IntPtr tex, IntPtr data, bool markNonReadable);
@@ -123,9 +122,20 @@ namespace CorsacHats
 
             }
 
+            static void Finalizer(Exception __exception)
+            {
+                HatMod.Logger.LogMessage("Finalizer running.");
+            }
+
+            static void Postfix()
+            {
+                HatMod.Logger.LogMessage("Postfix running.");
+
+            }
 
             public static bool Prefix(HatManager __instance)
             {
+                HatMod.Logger.LogMessage("Prefix running.");
                 try
                 {
                     if (!modded)
