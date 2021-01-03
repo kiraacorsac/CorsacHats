@@ -25,7 +25,7 @@ Currently not supported on other platforms.
 1) Download tempate for Gimp (.xfc) or Photoshop (.psd) [here](https://github.com/kiraacorsac/CorsacHats/releases/)
 2) Draw your hat in the template
 3) Extract in PNG file format. Preserve the resolution.
-4) Rename to ">hatname<.hat.png", where >hatname< is any unique name
+4) Rename to `>hatname<.hat.png`, where `>hatname<` is any unique name
 5) Place into AmongUs installation directory, in folder CorsacHats.
 
 
