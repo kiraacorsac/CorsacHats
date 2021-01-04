@@ -19,6 +19,7 @@ For PC:
 
 1) Install latest BepInEx x86 for UnityIL2CPP_x86 (Yes, it needs to be x86!)
 	1) Download from [here](https://builds.bepis.io/projects/bepinex_be) (lastest tested Artifact: #320, version UnityIL2CPP_x86)
+	1) Verify you've downloaded the correct BepInEx mod - does the downloaded file start with `BepInEx_UnityIL2CPP_x86` and is a `.zip` file? If yes, you may proceed :)
 	2) Extract into AmongUs folder (something like `C:\Program Files (x86)\Steam\steamapps\common\Among Us`) 
 2) Download CorsacHats.dll from latest release [here](https://github.com/kiraacorsac/CorsacHats/releases/)
 3) Place CorsacHats.dll in `>AmongUs folder<\BepInEx\plugins` (create the folder if it does not exist)
