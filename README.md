@@ -18,7 +18,7 @@ Short video: https://i.imgur.com/um3i9Yx.mp4
 For PC:
 
 1) Install latest BepInEx x86 for UnityIL2CPP_x86 (Yes, it needs to be x86!)
-	1) Download from [here](https://builds.bepis.io/projects/bepinex_be) (lastest tested Artifact: #320, version UnityIL2CPP_x86)
+	1) Download from [here](https://builds.bepis.io/projects/bepinex_be) (lastest tested Artifact: #320)
 	You need version "BepInEx Unity IL2CPP for Windows x86 machines"
 
 	1) Verify you've downloaded the correct BepInEx mod - does the downloaded file start with `BepInEx_UnityIL2CPP_x86` and is a `.zip` file? If yes, you may proceed :)
