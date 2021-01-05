@@ -58,15 +58,6 @@ namespace CorsacHats
                 return newHat;
             }
 
-            private static HatBehaviour CreateResourceHat(Assembly assembly, string resourceName)
-            {
-                HatMod.Logger.LogMessage($"Reaching Resource Hat: {resourceName}");
-                var texture = assembly.GetManifestResourceStream(resourceName);
-
-                var nameParts = resourceName.Split('.');
-                return CreateHat(texture, nameParts[nameParts.Length - 2]);
-            }
-
             private static HatBehaviour CreateFilesystemHat(string filePath)
             {
                 HatMod.Logger.LogMessage($"Reaching Filesystem Hat: {filePath}");
@@ -83,23 +74,6 @@ namespace CorsacHats
                     HatMod.Logger.LogError(e.Message);
                     throw e;
                 }
-
-            }
-
-            private static IEnumerable<HatBehaviour> CreateResourceHats()
-            {
-                Assembly assembly = Assembly.GetExecutingAssembly();
-                var resourceNames = assembly.GetManifestResourceNames().Where(n => n.StartsWith("CorsacHats.HatSprites"));
-                if (resourceNames.Count() == 0)
-                {
-                    HatMod.Logger.LogWarning("No Resource Hats found, dumping the full list of resource names");
-                    foreach (var name in assembly.GetManifestResourceNames())
-                    {
-                        HatMod.Logger.LogInfo(name);
-                    }
-                }
-                return resourceNames.Select(name => CreateResourceHat(assembly, name));
-
 
             }
 
@@ -140,16 +114,8 @@ namespace CorsacHats
                 {
                     if (!modded)
                     {
-
-                        HatMod.Logger.LogMessage("Adding resource hats begin");
-                        modded = true;
-                        var hatsFromResoruces = CreateResourceHats();
-                        foreach (var hat in hatsFromResoruces)
-                        {
-                            __instance.AllHats.Add(hat);
-                        }
-
                         HatMod.Logger.LogMessage("Adding filesystem hats");
+                        modded = true;
                         var hatsFromFilesystem = CreateFilesystemHats();
                         foreach (var hat in hatsFromFilesystem)
                         {
