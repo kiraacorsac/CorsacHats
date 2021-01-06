@@ -74,20 +74,5 @@
     <Compile Include="MyHats.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="HatSprites\kiraa.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="HatMaker\hatmaker.psd" />
-    <None Include="HatMaker\hatmaker.xcf" />
-    <None Include="README.md" />
-  </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
-    <Content Include="HatMaker\Examples\Kiraa.hat.png" />
-    <Content Include="HatMaker\Examples\Oggy.hat.png" />
-    <Content Include="HatMaker\Examples\Werella.hat.png" />
-    <Content Include="HatMaker\Examples\Yukia.hat.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
