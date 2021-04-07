@@ -17,6 +17,18 @@ namespace CorsacHats
 {
     public class MyHats
     {
+        [HarmonyPatch(typeof(HatsTab), nameof(HatsTab.OnEnable))]
+        public static class HatTabPatch
+        {
+            public static void Postfix(HatsTab __instance)
+            {
+                for(int i=0;i< __instance.ColorChips.Count;i++)
+                {
+                    var hat = __instance.ColorChips[i];
+                    hat.transform.localScale *= 0.7f;
+                }
+            }
+        }
         static bool modded = false;
         [HarmonyPatch(typeof(HatManager), nameof(HatManager.GetHatById))]
         public static class HatManagerHatsPatch
