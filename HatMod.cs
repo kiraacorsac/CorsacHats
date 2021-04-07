@@ -23,7 +23,7 @@ namespace CorsacHats
             {
                 Logger = Log;
 
-                KMOGFLPJLLK.EICIGKMJIMF = KMOGFLPJLLK.MGGHFLMODBE = Enumerable.Repeat<int>(255, 255).ToArray<int>();
+                IGDMNKLDEPI.OHDJGJFDDDP = IGDMNKLDEPI.AHFOOEHOFNC = Enumerable.Repeat<int>(255, 255).ToArray<int>();
                 Logger.LogMessage("Patching harmony...");
 
                 Attribute[] attrs = Attribute.GetCustomAttributes(typeof(HatManagerHatsPatch)); 

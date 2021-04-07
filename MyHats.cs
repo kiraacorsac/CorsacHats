@@ -11,7 +11,6 @@ using UnhollowerBaseLib;
 using UnityEngine;
 using BepInEx;
 using BepInEx.IL2CPP;
-using HatManager = OFCPCFDHIEF;
 
 
 namespace CorsacHats
