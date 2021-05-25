@@ -7,7 +7,7 @@ using System.Reflection;
 
 namespace CorsacHats
 {
-    [BepInPlugin("kiraa.corsachats", "CorsacHats", "1.4.0")]
+    [BepInPlugin("kiraa.corsachats", "CorsacHats", "1.0.4")]
     public class HatMod : BasePlugin {
         static internal BepInEx.Logging.ManualLogSource Logger;
         static Harmony _harmony;
