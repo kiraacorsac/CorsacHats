@@ -15,8 +15,8 @@ Short video: https://i.imgur.com/um3i9Yx.mp4
 
 ## Installation
 
-For PC (Among Us 2021.3.31.3s)<br/>
-1)Download the Latest Release [1.0.3](https://github.com/MrFawkes1337/CorsacHats/releases/latest) Here!<br/>
+For PC (Among Us 2021.5.10s)<br/>
+1)Download the Latest Release [1.0.4](https://github.com/MrFawkes1337/CorsacHats/releases/latest) Here!<br/>
 2)Extract the .zip Archive to Your Among Us Base Folder (You can get to this by right clicking Among Us on Steam, Clicking Properties, then Browse local Files)<br/>
 3)Upon running the game, you will see the BepInEx console loaded in the background, and any Custom Hats placed into the CorsacHats folder will be loaded upon entering a Lobby, and appear halfway down the hat selections.<br/>
 

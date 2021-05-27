@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <Description>CorsacHats</Description>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <GameVersion>2021.5.10s</GameVersion>
+        <DefineConstants>$(DefineConstants);STEAM</DefineConstants>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Reference Include="$(AmongUs)/BepInEx/core/*.dll"/>
+        <Reference Include="$(AmongUs)/BepInEx/unhollowed/*.dll"/>
+    </ItemGroup>
+
+    <Target Name="CopyCustomContent" AfterTargets="AfterBuild">
+        <Message Text="Second occurrence" />
+        <Copy SourceFiles="$(ProjectDir)\bin\$(Configuration)\netstandard2.1\CorsacHats.dll" DestinationFolder="$(AmongUs)/BepInEx/plugins/" />
+        <Copy SourceFiles="$(ProjectDir)\bin\$(Configuration)\netstandard2.1\CorsacHats.dll" DestinationFolder="../build/" />
+    </Target>
+</Project>
