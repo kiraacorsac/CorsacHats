@@ -31,11 +31,10 @@ namespace CorsacHats {
                 return iCall_LoadImage.Invoke(tex.Pointer, il2cppArray.Pointer, markNonReadable);
             }
 
-            private static HatBehaviour CreateHat(Stream texture, string id) {
+            private static HatBehaviour CreateHat(Stream texture, string id, int order) {
                 HatMod.Logger.LogMessage($"Creating Hat: {id}");
                 HatBehaviour newHat = new HatBehaviour();
                 Texture2D tex = new Texture2D(2, 2, TextureFormat.ARGB32, false);
-                float pixelsPerUnit = 225f;
 
                 byte[] hatTexture = new byte[texture.Length];
                 texture.Read(hatTexture, 0, (int)texture.Length);
@@ -43,10 +42,11 @@ namespace CorsacHats {
                 newHat.MainImage = Sprite.Create(
                     tex,
                     new Rect(0, 0, tex.width, tex.height),
-                    new Vector2(0.5f, 0.8f),
-                    pixelsPerUnit
+                    new Vector2(0.53f, 0.575f),
+                    tex.width * 0.375f
                 );
-                newHat.ProductId = $"+{id}";
+                newHat.Order = order + 99;
+                newHat.ProductId = id;
                 newHat.InFront = true;
                 newHat.NoBounce = true;
 
@@ -55,9 +55,10 @@ namespace CorsacHats {
 
             private static HatBehaviour CreateFilesystemHat(string filePath) {
                 HatMod.Logger.LogMessage($"Reaching Filesystem Hat: {filePath}");
+                int id = 0;
                 try {
                     using (var hatFileStream = new StreamReader(filePath)) {
-                        return CreateHat(hatFileStream.BaseStream, Path.GetFileNameWithoutExtension(filePath));
+                        return CreateHat(hatFileStream.BaseStream, Path.GetFileNameWithoutExtension(filePath), id++);
                     }
                 }
                 catch (IOException e) {
@@ -70,9 +71,9 @@ namespace CorsacHats {
 
             private static IEnumerable<HatBehaviour> CreateFilesystemHats() {
                 var hatPath = Path.Combine(Directory.GetCurrentDirectory(), "CorsacHats");
-                HatMod.Logger.LogInfo($"Looking for *.hat.png hats in path: {hatPath}");
+                HatMod.Logger.LogInfo($"Looking for *.png hats in path: {hatPath}");
                 Directory.CreateDirectory(hatPath);
-                var hatFileNames = Directory.GetFiles(hatPath, "*.hat.png");
+                var hatFileNames = Directory.GetFiles(hatPath, "*.png"); // use .png instead of .hat.png, for easier importing
                 if(hatFileNames.Count() == 0) {
                     HatMod.Logger.LogWarning("No Filesystem Hats found, dumping the full list of file names in searched path");
                     foreach (var name in Directory.GetFiles(hatPath)) {
@@ -84,6 +85,7 @@ namespace CorsacHats {
 
             public static bool Prefix(HatManager __instance) {
                 try {
+                    ModManager.Instance.ShowModStamp();
                     if (!modded) {
                         HatMod.Logger.LogMessage("Adding filesystem hats");
                         modded = true;
