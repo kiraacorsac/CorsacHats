@@ -15,12 +15,12 @@ Short video: https://i.imgur.com/um3i9Yx.mp4
 ## Installation
 
 For PC (Among Us 2021.6.15)<br/>
-1)Download the Latest Release [1.0.5](https://github.com/amsyarasyiq/CorsacHats/blob/master/build/CorsacHats.dll) Here!<br/>
+1)Download the Latest Release [1.0.5](blob/master/build/CorsacHats.dll) Here!<br/>
 2)Extract the .zip Archive to Your Among Us Base Folder (You can get to this by right clicking Among Us on Steam, Clicking Properties, then Browse local Files)<br/>
 3)Upon running the game, you will see the BepInEx console loaded in the background, and any Custom Hats placed into the CorsacHats folder will be loaded upon entering a Lobby, and appear halfway down the hat selections.<br/>
 
 ## Creating custom hats
-1) Download tempate for Gimp (.xfc) or Photoshop (.psd) [here](https://github.com/kiraacorsac/CorsacHats/releases/)
+1) Download tempate for Gimp (.xfc), Photoshop (.psd) or in .png format [here](HatMaker/)
 2) Draw your hat in the template
 3) Extract in PNG file format. Preserve the resolution.
 4) Rename to `>hatname<.png`, where `>hatname<` is any unique name
