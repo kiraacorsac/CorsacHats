@@ -2,12 +2,7 @@
     <PropertyGroup>
         <TargetFramework>netstandard2.1</TargetFramework>
         <Description>CorsacHats</Description>
-    </PropertyGroup>
-
-    <PropertyGroup>
-        <GameVersion>2021.5.10s</GameVersion>
-        <DefineConstants>$(DefineConstants);STEAM</DefineConstants>
-        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <GameVersion>2021.6.15</GameVersion>
     </PropertyGroup>
 
     <ItemGroup>
